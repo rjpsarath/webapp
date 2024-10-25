@@ -14,6 +14,7 @@ def create_excel_file():
         df = pd.DataFrame(columns=['email', 'password', 'manager_name', 'manager_email'])
         df.to_excel(EXCEL_FILE, index=False)
 
+
 # Signup route
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
